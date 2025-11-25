@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Amrutha Beauty Parlour & Embroidery Work</title>
+  <meta name="description" content="Amrutha Beauty Parlour & Embroidery Work — Services, prices, booking. Call 8919190990" />
+  <meta name="theme-color" content="#E6FFFA" />
+  <style>
+    :root{
+      --bg:#f6fffd; --card:#fff; --muted:#556965;
+      --accent:#63E6BE; --accent-2:#7EE7FF;
+      --radius:12px; --shadow:0 10px 30px rgba(6,22,18,0.06);
+      --maxw:1100px; font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#F8FFFC,#F0FFFB);color:#073431;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    .container{max-width:var(--maxw);margin:18px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .brand{display:flex;gap:12px;align-items:center;text-decoration:none;color:inherit}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#003633;font-weight:800;font-size:18px;box-shadow:var(--shadow)}
+    nav{display:flex;gap:12px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:700}
+    .button{padding:8px 12px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .cta{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white}
+    .lang-toggle{display:inline-flex;gap:8px;align-items:center;background:transparent;border-radius:10px;padding:6px}
+    .phoneBox{display:flex;gap:8px;align-items:center;background:linear-gradient(90deg,#E9FFFA,#F6FFFE);padding:8px 12px;border-radius:12px;border:1px solid rgba(6,22,18,0.04)}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:18px;align-items:start}
+    .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+    h1{margin:6px 0 8px;font-size:26px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:12px}
+    .services ul{list-style:none;padding:0;margin:0}
+    li.service{display:flex;align-items:flex-start;gap:12px;padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff,#FBFFFE);box-shadow:0 8px 20px rgba(6,22,18,0.03)}
+    .svc-icon{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent-2),var(--accent));color:#003633;font-weight:800}
+    .price{font-weight:800;color:#063B34}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:12px}
+    .photo{border-radius:10px;overflow:hidden;position:relative;padding-top:70%;background:linear-gradient(120deg,#fff,#F9FFFB);cursor:pointer}
+    .photo svg{position:absolute;inset:0;width:100%;height:100%}
+    .socials{display:flex;gap:8px;align-items:center}
+    .social-btn{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:10px;background:linear-gradient(90deg,#fff,#F6FFFE);border:1px solid rgba(6,22,18,0.04)}
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid rgba(6,22,18,0.06);width:100%}
+    footer{margin-top:18px;padding-top:12px;border-top:1px dashed rgba(6,22,18,0.04)}
+    .toast{position:fixed;right:18px;bottom:18px;padding:12px 16px;border-radius:12px;background:linear-gradient(90deg,#5EE0C9,#8AC6FF);color:#042b2a;box-shadow:0 10px 30px rgba(10,20,30,0.12);z-index:9999}
+    .admin-badge{background:#073431;color:#fff;padding:6px 8px;border-radius:8px;font-weight:700}
+    @media(max-width:800px){.hero{grid-template-columns:1fr}.logo{width:48px;height:48px}}
+  </style>
+</head>
+<body>
+  <div class="container" id="page">
+    <header>
+      <a class="brand" href="#" id="brandLink" aria-label="home">
+        <div class="logo">AB</div>
+        <div>
+          <div id="bizNameEN" style="font-weight:800">Amrutha Beauty Parlour & Embroidery Work</div>
+          <div id="bizNameTE" style="font-size:12px;color:var(--muted);display:none">అమృత బ్యూటీ పార్లర్ & ఎంబ్రాయిడరీ వర్క్</div>
+        </div>
+      </a>
+
+      <nav aria-label="Main menu" id="mainNav">
+        <a href="#services" data-key="nav_services">Services</a>
+        <a href="#embroidery" data-key="nav_embroidery">Embroidery</a>
+        <a href="#gallery" data-key="nav_gallery">Gallery</a>
+        <a href="#contact" data-key="nav_contact">Contact</a>
+      </nav>
+
+      <div style="display:flex;gap:8px;align-items:center">
+        <div class="phoneBox">
+          <div style="font-weight:800">📞 8919190990</div>
+          <a class="button" style="background:transparent;color:var(--accent);text-decoration:none;font-weight:800" href="tel:8919190990" id="callNowBtn">Call Now</a>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:8px">
+          <div class="lang-toggle" role="group" aria-label="language">
+            <button class="button" id="btnEN" aria-pressed="true" title="English">EN</button>
+            <button class="button" id="btnTE" aria-pressed="false" title="Telugu">తెలుగు</button>
+          </div>
+
+          <!-- Admin button (only owners should use this) -->
+          <button class="button" id="adminBtn" style="background:#fff;border:1px solid rgba(6,22,18,0.06)">Admin</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="card">
+          <div class="kicker" style="display:inline-block;padding:6px 8px;background:rgba(99,230,190,0.12);color:var(--accent);border-radius:999px;font-weight:700;font-size:13px" data-key="kicker">New — Autumn Palette</div>
+          <h1 id="heroTitle" data-key="hero_title">Colourful beauty & precise embroidery</h1>
+          <p class="muted" id="heroLead" data-key="hero_lead">Professional beauty services & computer embroidery designs. Book a service or join our WhatsApp group for offers.</p>
+
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <button class="button cta" onclick="scrollToId('contact')" id="bookNow" data-key="book_now">Book a Service</button>
+            <a class="button" onclick="scrollToId('embroidery')" style="background:transparent;border:1px solid rgba(6,22,18,0.06)">See Embroidery</a>
+          </div>
+        </div>
+
+        <aside class="card" aria-label="contact info">
+          <div style="display:flex;gap:12px;align-items:center">
+            <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent-2),var(--accent));display:grid;place-items:center;color:#003633;font-weight:800">AB</div>
+            <div>
+              <div style="font-weight:800" id="studioNameEN">Amrutha Beauty Parlour</div>
+              <div id="studioNameTE" style="display:none;color:var(--muted);font-size:13px">అమృత బ్యూటీ పార్లర్</div>
+              <div style="font-size:13px;color:var(--muted);margin-top:6px" data-key="studio_hours">Open Mon–Sat • 9AM–7:30PM</div>
+            </div>
+          </div>
+
+          <div style="margin-top:12px">
+            <div style="font-weight:800" data-key="address_label">Address</div>
+            <div class="muted" id="addressText">23 Palette Lane, MG Road</div>
+            <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+              <a class="social-btn" href="https://chat.whatsapp.com/KHdVM5BbYY5INWRRXC7q8l" target="_blank" rel="noopener">💬 Join WhatsApp</a>
+              <a class="social-btn" href="https://www.instagram.com/padma_fashions_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">📸 Instagram</a>
+              <a class="social-btn" href="https://www.youtube.com/channel/UC3ZmEr7E1cm0nBD6Y912cTQ" target="_blank" rel="noopener">▶️ YouTube</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Services -->
+      <section id="services" style="margin-top:20px">
+        <h2 data-key="services_title">Beauty Parlour Services</h2>
+        <div class="grid services" id="servicesList"></div>
+      </section>
+
+      <!-- Embroidery -->
+      <section id="embroidery" style="margin-top:18px">
+        <h2 data-key="embroidery_title">Computer Embroidery Designs</h2>
+        <div class="muted" data-key="embroidery_lead">Blouse, Saree border, Kids wear & Wedding designs. Upload your images for samples.</div>
+
+        <div class="grid" style="margin-top:12px">
+          <div class="card">
+            <h3 data-key="emb_cat1">Blouse designs</h3>
+            <p class="muted" data-key="emb_cat1_desc">Starting from ₹500</p>
+          </div>
+          <div class="card">
+            <h3 data-key="emb_cat2">Saree border designs</h3>
+            <p class="muted" data-key="emb_cat2_desc">Price varies by time taken & number of stitches — ₹500 – ₹2000</p>
+          </div>
+          <div class="card">
+            <h3 data-key="emb_cat3">Kids wear designs</h3>
+            <p class="muted" data-key="emb_cat3_desc">Call to enquire</p>
+          </div>
+          <div class="card">
+            <h3 data-key="emb_cat4">Wedding designs</h3>
+            <p class="muted" data-key="emb_cat4_desc">₹500 – ₹2000</p>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <h3 data-key="upload_title">Upload your sample images (owner only)</h3>
+          <p class="muted" data-key="upload_hint">After uploading, images show here. Only site owner via Admin can change images permanently (saved to browser storage).</p>
+          <div class="gallery" id="galleryGrid">
+            <!-- placeholders -->
+            <div class="photo"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#FDFDFD"/></svg></div>
+            <div class="photo"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#FDFDFD"/></svg></div>
+            <div class="photo"><svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#FDFDFD"/></svg></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products / Price list -->
+      <section style="margin-top:18px">
+        <h2 data-key="price_title">Price List</h2>
+        <div class="grid" id="priceList"></div>
+      </section>
+
+      <!-- Contact / Booking -->
+      <section id="contact" style="margin-top:18px">
+        <h2 data-key="contact_title">Contact & Bookings</h2>
+        <p class="muted" data-key="contact_lead">Send a booking request — we will confirm by phone or WhatsApp.</p>
+
+        <form id="bookingForm" onsubmit="handleBooking(event)" class="card" style="margin-top:10px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div>
+              <label data-key="label_name">Full name</label>
+              <input id="b_name" required />
+            </div>
+            <div>
+              <label data-key="label_phone">Phone</label>
+              <input id="b_phone" required placeholder="+91 98XXXXXXX" />
+            </div>
+            <div>
+              <label data-key="label_service">Service</label>
+              <select id="b_service" required>
+                <option value="">Choose</option>
+              </select>
+            </div>
+            <div>
+              <label data-key="label_date">Preferred date</label>
+              <input id="b_date" type="date" />
+            </div>
+          </div>
+
+          <div style="margin-top:8px">
+            <label data-key="label_notes">Notes</label>
+            <textarea id="b_notes" rows="4" placeholder="Tell us about your hair or design..."></textarea>
+          </div>
+
+          <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:8px">
+            <div style="display:flex;gap:8px">
+              <button class="button cta" type="submit" id="sendBooking" data-key="send_booking">Send Request</button>
+              <button class="button" type="button" onclick="clearBookingForm()" data-key="clear">Clear</button>
+            </div>
+            <div class="muted" style="font-size:13px">We respect your privacy.</div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="display:flex;gap:12px;align-items:center">
+          <div class="logo" style="width:44px;height:44px">AB</div>
+          <div>
+            <div style="font-weight:800" id="fBizEN">Amrutha Beauty Parlour</div>
+            <div id="fBizTE" style="display:none;color:var(--muted);font-size:13px">అమృత బ్యూటీ పార్లర్</div>
+            <div class="muted" style="font-size:13px">© <span id="year"></span> All rights reserved</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:8px;align-items:center">
+          <a class="social-btn" href="https://www.instagram.com/padma_fashions_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">Instagram</a>
+          <a class="social-btn" href="https://www.youtube.com/channel/UC3ZmEr7E1cm0nBD6Y912cTQ" target="_blank" rel="noopener">YouTube</a>
+          <a class="social-btn" href="https://chat.whatsapp.com/KHdVM5BbYY5INWRRXC7q8l" target="_blank" rel="noopener">WhatsApp Group</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Admin Edit Modal (hidden until Admin logs in) -->
+  <div id="adminModal" style="display:none;position:fixed;inset:0;z-index:9999;display:grid;place-items:center;background:rgba(6,10,8,0.4)">
+    <div style="width:clamp(320px,80%,900px);background:#fff;border-radius:12px;padding:18px;box-shadow:0 30px 80px rgba(6,4,8,0.6);max-height:90vh;overflow:auto">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <strong>Admin Edit Panel</strong>
+        <div style="display:flex;gap:8px;align-items:center">
+          <button onclick="closeAdmin()" style="padding:6px 8px;border-radius:8px">Close</button>
+        </div>
+      </div>
+
+      <div style="margin-top:12px">
+        <label style="font-weight:700">Business name (English)</label>
+        <input id="admin_biz_en" />
+        <label style="font-weight:700;margin-top:8px">Business name (Telugu)</label>
+        <input id="admin_biz_te" />
+        <label style="font-weight:700;margin-top:8px">Address</label>
+        <input id="admin_address" />
+
+        <hr style="margin:12px 0"/>
+
+        <strong>Services / Prices</strong>
+        <div id="adminServices" style="display:grid;gap:8px;margin-top:8px"></div>
+
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <button class="button cta" onclick="saveAdmin()">Save changes</button>
+          <button class="button" onclick="revertAdmin()">Revert</button>
+        </div>
+
+        <p style="margin-top:12px;color:var(--muted);font-size:13px">Note: Admin is client-side only. To secure edits across devices, set up a simple server or use GitHub + Netlify CMS — ask me if you want that.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  /************************************************************************
+   * Simple single-file site with:
+   * - default English, optional Telugu toggle
+   * - admin panel protected by password (client-side)
+   * - owner-only editing saved to localStorage
+   *
+   * SECURITY NOTE: client-side admin is for convenience. It's NOT secure:
+   * anyone with access to the browser can open DevTools and change localStorage
+   * or the code. For secure multi-device editing, you need a server with login.
+   *
+   * Change ADMIN_PASSWORD below to your preferred password.
+   ************************************************************************/
+  const ADMIN_PASSWORD = 'amrutha123'; // <<-- change this immediately after first use
+
+  // Webhook URL for server notifications (leave empty to skip POST)
+  const WEBHOOK_URL = ''; // e.g. your Zapier/Make webhook
+
+  // -------------------------
+  // Content data (default EN/TE)
+  // -------------------------
+  const defaultContent = {
+    bizNameEN: "Amrutha Beauty Parlour & Embroidery Work",
+    bizNameTE: "అమృతి బ్యూటీ పార్లర్ & ఎంబ్రాయిడరీ వర్క్",
+    address: "23 Palette Lane, MG Road",
+    studioHoursEN: "Open Mon–Sat • 9AM–7:30PM",
+    studioHoursTE: "సోం–శని • ఉదయం 9 – సాయంత్రం 7:30",
+    services: [
+      { id:'s1', icon:'✨', en:'Eyebrow Threading', te:'భువి తీర్మానం', priceEN:'₹50', priceTE:'₹50', noteEN:'', noteTE:'' },
+      { id:'s2', icon:'✂️', en:'Hair Cut', te:'హెయిర్ కట్', priceEN:'Based on haircut style', priceTE:'కుట్టు శైలి ఆధారంగా' },
+      { id:'s3', icon:'💆‍♀️', en:'Facial (Normal)', te:'ఫేషియల్ (సాధారణ)', priceEN:'Based on type of facial', priceTE:'ఫేసియల్ రకం ఆధారంగా' },
+      { id:'s4', icon:'🌸', en:'Bridal Makeup', te:'వివాహ మేకప్', priceEN:'Starting from ₹599', priceTE:'₹599 నుండి' },
+      { id:'s5', icon:'🧴', en:'Hair Colouring', te:'హెయిర్ కలరింగ్', priceEN:'Starting from ₹599 (by length)', priceTE:'₹599 నుండి (దైఁబ్యుల వర్గం)' },
+      { id:'s6', icon:'🌺', en:'Saree Draping', te:'సారీ దిక్కు', priceEN:'Starting from ₹999', priceTE:'₹999 నుండి' },
+      { id:'s7', icon:'🧖‍♀️', en:'Face Cleanup', te:'ఫేస్ క్లీనప్', priceEN:'₹499', priceTE:'₹499' },
+      { id:'s8', icon:'💅', en:'Mehendi (Front Hand)', te:'మెహెంది (ముందు చేయి)', priceEN:'Starting from ₹299', priceTE:'₹299 నుండి' },
+      { id:'s9', icon:'💇‍♀️', en:'Hair Wash + Blow Dry', te:'షాంపూ + బ్లో డ్రై', priceEN:'Depends on hair length', priceTE:'జుట్టు పొడవు ఆధారంగా' },
+      { id:'s10', icon:'🧖‍♀️', en:'Pedicure / Manicure', te:'పెడికూర్ / మ్యానికూర్', priceEN:'₹799', priceTE:'₹799' }
+    ],
+    embroidery: {
+      cat1_en:'Blouse designs', cat1_te:'బ్లౌజ్ డిజైన్లు',
+      cat2_en:'Saree border designs', cat2_te:'సారీ బార్డర్ డిజైన్లు',
+      cat3_en:'Kids wear designs', cat3_te:'కళ్లు వేర్ డిజైన్లు',
+      cat4_en:'Wedding designs', cat4_te:'వివాహ డిజైన్లు'
+    }
+  };
+
+  // load content from localStorage or use defaults
+  const state = JSON.parse(localStorage.getItem('amrutha_content') || 'null') || defaultContent;
+
+  // Save helper
+  function saveState(){ localStorage.setItem('amrutha_content', JSON.stringify(state)); }
+
+  // render services & prices
+  function renderServices(){
+    const container = document.getElementById('servicesList');
+    container.innerHTML = '';
+    state.services.forEach(s => {
+      const div = document.createElement('div');
+      div.className = 'card service';
+      div.style.display = 'flex';
+      div.style.alignItems = 'center';
+      div.innerHTML = `
+        <div class="svc-icon" aria-hidden="true">${s.icon}</div>
+        <div style="flex:1">
+          <div style="font-weight:800" data-key="svc_${s.id}_en">${escapeHtml(s.en)}</div>
+          <div style="color:var(--muted);font-size:13px" data-key="svc_${s.id}_note_en">${escapeHtml(s.noteEN || s.priceEN)}</div>
+        </div>
+        <div class="price" style="min-width:110px;text-align:right">${escapeHtml(s.priceEN)}</div>
+      `;
+      container.appendChild(div);
+    });
+    // also populate booking select
+    const sel = document.getElementById('b_service');
+    sel.innerHTML = '<option value="">Choose</option>';
+    state.services.forEach(s => {
+      const o = document.createElement('option'); o.value = s.en; o.textContent = s.en;
+      sel.appendChild(o);
+    });
+  }
+
+  // render price list (compact)
+  function renderPrices(){
+    const container = document.getElementById('priceList');
+    container.innerHTML = '';
+    state.services.forEach(s => {
+      const div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><div><strong>${escapeHtml(s.en)}</strong><div class="muted" style="font-size:13px">${escapeHtml(s.noteEN)}</div></div><div class="price">${escapeHtml(s.priceEN)}</div></div>`;
+      container.appendChild(div);
+    });
+  }
+
+  // text swap functions (EN <-> TE)
+  function toTelugu(){
+    // swap visible singular items
+    document.getElementById('bizNameEN').style.display='none';
+    document.getElementById('bizNameTE').style.display='block';
+    document.getElementById('studioNameEN').style.display='none';
+    document.getElementById('studioNameTE').style.display='block';
+    document.getElementById('fBizEN').style.display='none';
+    document.getElementById('fBizTE').style.display='block';
+    // hero & labels
+    setTextByKey('kicker','New — Autumn Palette', 'కొత్త — శరదృతువు పలెట్');
+    setTextByKey('hero_title','Colourful beauty & precise embroidery','రంగులకరమైన బ్యూటీ & ఖచ్చిత ఎంబ్రాయిడరీ');
+    setTextByKey('hero_lead','Professional beauty services & computer embroidery designs. Book a service or join our WhatsApp group for offers.','ప్రొఫెషనల్ బ్యూటీ సేవలు & కంప్యూటర్ ఎంబ్రాయిడరీ డిజైన్లు. సేవ బుక్ చేయండి లేదా ఆఫర్లు కోసం WhatsApp గ్రూప్ చేరండి.');
+    setTextByKey('book_now','Book a Service','సేవ బుక్ చేయండి');
+    setTextByKey('services_title','Beauty Parlour Services','బ్యూటీ పార్లర్ సేవలు');
+    setTextByKey('embroidery_title','Computer Embroidery Designs','కంప్యూటర్ ఎంబ్రాయిడరీ డిజైన్లు');
+    setTextByKey('emb_cat1', state.embroidery.cat1_en, state.embroidery.cat1_te);
+    setTextByKey('emb_cat1_desc','Starting from ₹500','₹500 నుండి');
+    setTextByKey('emb_cat2', state.embroidery.cat2_en, state.embroidery.cat2_te);
+    setTextByKey('emb_cat2_desc','Price varies by time taken & number of stitches — ₹500 – ₹2000','సమయం మరియు తొక్కల సంఖ్య ఆధారంగా ధర — ₹500 – ₹2000');
+    setTextByKey('emb_cat3', state.embroidery.cat3_en, state.embroidery.cat3_te);
+    setTextByKey('emb_cat3_desc','Call to enquire','దయచేసి కాల్ చేయండి');
+    setTextByKey('emb_cat4', state.embroidery.cat4_en, state.embroidery.cat4_te);
+    setTextByKey('emb_cat4_desc','₹500 – ₹2000','₹500 – ₹2000');
+    setTextByKey('upload_title','Upload your sample images (owner only)','సంపుల్ ఫోటోలు అప్‌లోడ్ చేయండి (తనిగానే)');
+    setTextByKey('upload_hint','After uploading, images show here. Only site owner via Admin can change images permanently (saved to browser storage).','అప్‌లోడ్ చేసిన తర్వాత ఇమేజ్‌లు ఇక్కడ కనిపిస్తాయి. శాశ్వతంగా మార్చడానికి అడ్మిన్ మాత్రమే.');
+    setTextByKey('price_title','Price List','ధరల జాబితా');
+    setTextByKey('contact_title','Contact & Bookings','సంపర్కం & బుకింగ్స్');
+    setTextByKey('contact_lead','Send a booking request — we will confirm by phone or WhatsApp.','బుకింగ్ రిక్వెస్ట్ పంపండి — మేము ఫోన్ లేదా WhatsApp ద్వారా నిర్ధారించుతాము.');
+    setTextByKey('label_name','Full name','పూర్తి పేరు');
+    setTextByKey('label_phone','Phone','ఫోన్');
+    setTextByKey('label_service','Service','సేవ');
+    setTextByKey('label_date','Preferred date','ఇష్టమైన తేది');
+    setTextByKey('label_notes','Notes','గమనికలు');
+    setTextByKey('send_booking','Send Request','రిక్వెస్ట్ పంపండి');
+    setTextByKey('clear','Clear','తొలగించు');
+    // services: swap to Telugu texts and prices
+    const svcCards = document.querySelectorAll('#servicesList .card');
+    svcCards.forEach((card, idx)=> {
+      const s = state.services[idx];
+      if(!s) return;
+      card.querySelector('div[style*="font-weight:800"]').textContent = s.te || s.en;
+      const note = card.querySelector('div[style*="color:var(--muted)"]');
+      if(note) note.textContent = s.noteTE || s.priceTE || s.priceEN;
+      const priceDiv = card.querySelector('.price');
+      if(priceDiv) priceDiv.textContent = s.priceTE || s.priceEN;
+    });
+    // price list
+    const priceCards = document.querySelectorAll('#priceList .card');
+    priceCards.forEach((c, i) => {
+      const s = state.services[i];
+      if(!s) return;
+      c.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><div><strong>${escapeHtml(s.te||s.en)}</strong><div class="muted" style="font-size:13px">${escapeHtml(s.noteTE||s.priceTE||s.noteEN)}</div></div><div class="price">${escapeHtml(s.priceTE||s.priceEN)}</div></div>`;
+    });
+    // nav labels
+    setNavText('nav_services','Services','సేవలు');
+    setNavText('nav_embroidery','Embroidery','ఎంబ్రాయిడరీ');
+    setNavText('nav_gallery','Gallery','గ్యాలరీ');
+    setNavText('nav_contact','Contact','సంపర్కం');
+    // other text - studio hours
+    document.querySelector('[data-key="studio_hours"]').textContent = state.studioHoursTE || state.studioHoursEN;
+    // swap buttons state
+    document.getElementById('btnEN').setAttribute('aria-pressed','false');
+    document.getElementById('btnTE').setAttribute('aria-pressed','true');
+  }
+
+  function toEnglish(){
+    document.getElementById('bizNameEN').style.display='block';
+    document.getElementById('bizNameTE').style.display='none';
+    document.getElementById('studioNameEN').style.display='block';
+    document.getElementById('studioNameTE').style.display='none';
+    document.getElementById('fBizEN').style.display='block';
+    document.getElementById('fBizTE').style.display='none';
+
+    setTextByKey('kicker','New — Autumn Palette','కొత్త — శరదృతువు పలెట్');
+    setTextByKey('hero_title','Colourful beauty & precise embroidery','రంగులకరమైన బ్యూటీ & ఖచ్చిత ఎంబ్రాయిడరీ');
+    setTextByKey('hero_lead','Professional beauty services & computer embroidery designs. Book a service or join our WhatsApp group for offers.','ప్రొఫెషనల్ బ్యూటీ సేవలు & కంప్యూటర్ ఎంబ్రాయిడరీ డిజైన్లు. సేవ బుక్ చేయండి లేదా ఆఫర్లు కోసం WhatsApp గ్రూప్ చేరండి.');
+    setTextByKey('book_now','Book a Service','సేవ బుక్ చేయండి');
+    setTextByKey('services_title','Beauty Parlour Services','బ్యూటీ పార్లర్ సేవలు');
+    setTextByKey('embroidery_title','Computer Embroidery Designs','కంప్యూటర్ ఎంబ్రాయిడరీ డిజైన్లు');
+    setTextByKey('emb_cat1', state.embroidery.cat1_en, state.embroidery.cat1_te);
+    setTextByKey('emb_cat1_desc','Starting from ₹500','₹500 నుండి');
+    setTextByKey('emb_cat2', state.embroidery.cat2_en, state.embroidery.cat2_te);
+    setTextByKey('emb_cat2_desc','Price varies by time taken & number of stitches — ₹500 – ₹2000','సమయం మరియు తొక్కల సంఖ్య ఆధారంగా ధర — ₹500 – ₹2000');
+    setTextByKey('emb_cat3', state.embroidery.cat3_en, state.embroidery.cat3_te);
+    setTextByKey('emb_cat3_desc','Call to enquire','దయచేసి కాల్ చేయండి');
+    setTextByKey('emb_cat4', state.embroidery.cat4_en, state.embroidery.cat4_te);
+    setTextByKey('emb_cat4_desc','₹500 – ₹2000','₹500 – ₹2000');
+    setTextByKey('upload_title','Upload your sample images (owner only)','సంపుల్ ఫొటోలు అప్‌లోడ్ చేయండి (తనిగానే)');
+    setTextByKey('upload_hint','After uploading, images show here. Only site owner via Admin can change images permanently (saved to browser storage).','అప్‌లోడ్ చేసిన తర్వాత ఇమేజ్‌లు ఇక్కడ కనిపిస్తాయి. శాశ్వతంగా మార్చడానికి అడ్మిన్ మాత్రమే.');
+    setTextByKey('price_title','Price List','ధరల జాబితా');
+    setTextByKey('contact_title','Contact & Bookings','సంపర్కం & బుకింగ్స్');
+    setTextByKey('contact_lead','Send a booking request — we will confirm by phone or WhatsApp.','బుకింగ్ రిక్వెస్ట్ పంపండి — మేము ఫోన్ లేదా WhatsApp ద్వారా నిర్ధారించుతాము.');
+    setTextByKey('label_name','Full name','పూర్తి పేరు');
+    setTextByKey('label_phone','Phone','ఫోన్');
+    setTextByKey('label_service','Service','సేవ');
+    setTextByKey('label_date','Preferred date','ఇష్టమైన తేది');
+    setTextByKey('label_notes','Notes','గమనికలు');
+    setTextByKey('send_booking','Send Request','రిక్వెస్ట్ పంపండి');
+    setTextByKey('clear','Clear','తొలగించు');
+
+    // services -> english
+    const svcCards = document.querySelectorAll('#servicesList .card');
+    svcCards.forEach((card, idx)=> {
+      const s = state.services[idx];
+      if(!s) return;
+      card.querySelector('div[style*="font-weight:800"]').textContent = s.en || s.te;
+      const note = card.querySelector('div[style*="color:var(--muted)"]');
+      if(note) note.textContent = s.noteEN || s.priceEN;
+      const priceDiv = card.querySelector('.price');
+      if(priceDiv) priceDiv.textContent = s.priceEN;
+    });
+
+    const priceCards = document.querySelectorAll('#priceList .card');
+    priceCards.forEach((c, i) => {
+      const s = state.services[i];
+      if(!s) return;
+      c.innerHTML = `<div style="display:flex;justify-content:space-between;align-items:center"><div><strong>${escapeHtml(s.en)}</strong><div class="muted" style="font-size:13px">${escapeHtml(s.noteEN)}</div></div><div class="price">${escapeHtml(s.priceEN)}</div></div>`;
+    });
+
+    setNavText('nav_services','Services','సేవలు');
+    setNavText('nav_embroidery','Embroidery','ఎంబ్రాయిడరీ');
+    setNavText('nav_gallery','Gallery','గ్యాలరీ');
+    setNavText('nav_contact','Contact','సంపర్కం');
+
+    document.querySelector('[data-key="studio_hours"]').textContent = state.studioHoursEN || state.studioHoursTE;
+    document.getElementById('btnEN').setAttribute('aria-pressed','true');
+    document.getElementById('btnTE').setAttribute('aria-pressed','false');
+  }
+
+  function setNavText(dataKey,en,te){
+    const a = document.querySelector(`[data-key="${dataKey}"]`);
+    if(!a) return;
+    const langEN = en || dataKey;
+    const langTE = te || en;
+    // store both on element for toggling
+    a.dataset.en = langEN; a.dataset.te = langTE;
+    a.textContent = langEN;
+  }
+
+  function setTextByKey(elKey,en,te){
+    const el = document.querySelector(`[data-key="${elKey}"]`);
+    if(!el) return;
+    el.dataset.en = en; el.dataset.te = te;
+    // default is English
+    el.textContent = en;
+  }
+
+  // utilities
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' })[m]); }
+
+  // initial render
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('addressText').textContent = state.address;
+  document.querySelector('[data-key="studio_hours"]').textContent = state.studioHoursEN;
+  renderServices(); renderPrices();
+
+  // language button listeners
+  document.getElementById('btnTE').addEventListener('click', ()=> {
+    toTelugu();
+  });
+  document.getElementById('btnEN').addEventListener('click', ()=> {
+    toEnglish();
+  });
+
+  // scroll helper
+  function scrollToId(id){ const el = document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }
+
+  // Toast
+  function showToast(msg, timeout=3000){
+    const t = document.createElement('div'); t.className='toast'; t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(()=> t.style.opacity='0.01', timeout-300);
+    setTimeout(()=> t.remove(), timeout);
+  }
+
+  // Bookings
+  function handleBooking(e){
+    e.preventDefault();
+    const name = document.getElementById('b_name').value.trim();
+    const phone = document.getElementById('b_phone').value.trim();
+    const service = document.getElementById('b_service').value;
+    const date = document.getElementById('b_date').value;
+    const notes = document.getElementById('b_notes').value.trim();
+
+    if(!name || !phone || !service){ alert('Please fill name, phone and service'); return; }
+
+    const booking = { name, phone, service, date, notes, submittedAt:new Date().toISOString() };
+
+    // save to localStorage bookings list
+    const bookings = JSON.parse(localStorage.getItem('amrutha_bookings') || '[]');
+    bookings.push(booking);
+    localStorage.setItem('amrutha_bookings', JSON.stringify(bookings));
+
+    // browser notification (ask permission)
+    if(Notification && Notification.permission === 'granted'){
+      new Notification('New booking', { body:`${name} — ${service}` });
+    } else if(Notification && Notification.permission !== 'denied'){
+      Notification.requestPermission().then(p => { if(p==='granted') new Notification('New booking', { body:`${name} — ${service}` }); });
+    }
+
+    // POST to webhook if configured
+    if(WEBHOOK_URL){
+      fetch(WEBHOOK_URL, { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(booking) })
+        .then(()=> console.log('Webhook posted'))
+        .catch(err=> console.warn('Webhook failed',err));
+    }
+
+    showToast('Request sent — we will contact you soon!');
+    document.getElementById('bookingForm').reset();
+  }
+
+  function clearBookingForm(){ document.getElementById('bookingForm').reset(); showToast('Form cleared'); }
+
+  // Admin functionality
+  document.getElementById('adminBtn').addEventListener('click', ()=>{
+    const p = prompt('Enter admin password:');
+    if(p === null) return;
+    if(p === ADMIN_PASSWORD){
+      openAdmin();
+    } else {
+      alert('Wrong password');
+    }
+  });
+
+  function openAdmin(){
+    // populate fields
+    document.getElementById('admin_biz_en').value = state.bizNameEN || defaultContent.bizNameEN;
+    document.getElementById('admin_biz_te').value = state.bizNameTE || defaultContent.bizNameTE;
+    document.getElementById('admin_address').value = state.address || defaultContent.address;
+
+    // services
+    const svcWrap = document.getElementById('adminServices');
+    svcWrap.innerHTML = '';
+    state.services.forEach(s => {
+      const row = document.createElement('div');
+      row.style.display='grid'; row.style.gridTemplateColumns='1fr 140px 140px'; row.style.gap='8px';
+      row.innerHTML = `
+        <input data-id="${s.id}" class="adm_s_en" value="${escapeHtml(s.en)}" />
+        <input data-id="${s.id}" class="adm_s_price" value="${escapeHtml(s.priceEN)}" />
+        <input data-id="${s.id}" class="adm_s_icon" value="${escapeHtml(s.icon)}" />
+      `;
+      svcWrap.appendChild(row);
+    });
+
+    document.getElementById('adminModal').style.display = 'grid';
+  }
+
+  function closeAdmin(){ document.getElementById('adminModal').style.display='none'; }
+
+  function saveAdmin(){
+    // read admin fields & save to state
+    state.bizNameEN = document.getElementById('admin_biz_en').value.trim() || state.bizNameEN;
+    state.bizNameTE = document.getElementById('admin_biz_te').value.trim() || state.bizNameTE;
+    state.address = document.getElementById('admin_address').value.trim() || state.address;
+
+    // services
+    const enInputs = document.querySelectorAll('.adm_s_en');
+    enInputs.forEach((inp, idx) => {
+      const id = inp.dataset.id;
+      const svc = state.services.find(s=>s.id===id);
+      if(svc){
+        svc.en = inp.value.trim() || svc.en;
+      }
+    });
+    const priceInputs = document.querySelectorAll('.adm_s_price');
+    priceInputs.forEach((inp, idx) => {
+      const id = inp.dataset.id;
+      const svc = state.services.find(s=>s.id===id);
+      if(svc) svc.priceEN = inp.value.trim() || svc.priceEN;
+    });
+    const iconInputs = document.querySelectorAll('.adm_s_icon');
+    iconInputs.forEach(inp => {
+      const id = inp.dataset.id;
+      const svc = state.services.find(s=>s.id===id);
+      if(svc) svc.icon = inp.value.trim() || svc.icon;
+    });
+
+    saveState();
+    // re-render page in English
+    toEnglish();
+    document.getElementById('addressText').textContent = state.address;
+    renderServices(); renderPrices();
+    showToast('Changes saved locally');
+    closeAdmin();
+  }
+
+  function revertAdmin(){
+    // restore defaults in modal inputs
+    document.getElementById('admin_biz_en').value = defaultContent.bizNameEN;
+    document.getElementById('admin_biz_te').value = defaultContent.bizNameTE;
+    document.getElementById('admin_address').value = defaultContent.address;
+    const svcWrap = document.getElementById('adminServices');
+    const inputs = svcWrap.querySelectorAll('.adm_s_en');
+    inputs.forEach((inp, idx) => inp.value = defaultContent.services[idx].en);
+    const prices = svcWrap.querySelectorAll('.adm_s_price');
+    prices.forEach((p, idx) => p.value = defaultContent.services[idx].priceEN);
+    const icons = svcWrap.querySelectorAll('.adm_s_icon');
+    icons.forEach((i, idx) => i.value = defaultContent.services[idx].icon);
+    showToast('Admin form reverted to defaults');
+  }
+
+  // simple escaping when creating nodes
+  function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[m]); }
+
+  // initial language is English (default)
+  toEnglish();
+
+  // Small: clicking brand switches to top
+  document.getElementById('brandLink').addEventListener('click', (e)=>{ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
+
+  </script>
+</body>
+</html>
